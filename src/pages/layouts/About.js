@@ -2,7 +2,6 @@ import React from 'react'
 import Header from '../../components/Header'
 import styled from 'styled-components';
 import { Link, Outlet, useNavigate } from 'react-router-dom'
-import { AboutRoute } from '../../routes'
 
 const ContentWrapper = styled.div`
   margin-top: 16px;
@@ -17,12 +16,9 @@ function About () {
     return (
         <div className="main-page">
             <Header/>
-            <Link to="/tiktactoe">Tictactoe</Link>
             <div onClick={(e)=>navigate('./tiktactoe')}>123</div>
             <ContentWrapper>
-                <Outlet>
-                    <AboutRoute/>
-                </Outlet>
+                <Outlet/>
             </ContentWrapper>
         </div>
         

@@ -4,7 +4,7 @@ import Header from '../components/Header'
 function Tiktactoe() {
     return (
         <div className="main-page">
-            <Header />
+            Something in here
         </div>
     );
 }
